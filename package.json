@@ -1,0 +1,48 @@
+{
+  "name": "github-profile-analytics",
+  "version": "1.0.0",
+  "description": "Comprehensive GitHub profile analytics and enhancement platform",
+  "main": "server/index.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm run dev",
+    "build": "npm run client:build && npm run server:build",
+    "vercel-build": "npm run client:build",
+    "netlify-build": "npm run client:build",
+    "client:build": "cd client && npm run build",
+    "server:build": "cd server && npm run build",
+    "start": "cd server && npm start",
+    "test": "npm run client:test && npm run server:test",
+    "client:test": "cd client && npm test",
+    "server:test": "cd server && npm test",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "lint": "npm run client:lint && npm run server:lint",
+    "client:lint": "cd client && npm run lint",
+    "server:lint": "cd server && npm run lint",
+    "clean": "rm -rf node_modules client/node_modules server/node_modules client/dist server/dist"
+  },
+  "keywords": [
+    "github",
+    "analytics",
+    "profile",
+    "dashboard",
+    "ai",
+    "recommendations",
+    "readme",
+    "enhancement"
+  ],
+  "author": "GitHub Analytics Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "dependencies": {
+    "@google/generative-ai": "^0.2.1"
+  }
+}
