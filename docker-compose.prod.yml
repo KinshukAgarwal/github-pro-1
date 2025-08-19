@@ -62,8 +62,8 @@ services:
       - GITHUB_CLIENT_ID=${GITHUB_CLIENT_ID}
       - GITHUB_CLIENT_SECRET=${GITHUB_CLIENT_SECRET}
       - GEMINI_API_KEY=${GEMINI_API_KEY}
-      - CLIENT_URL=https://git-viz-lytics.vercel.app
-      - SERVER_URL=https://git-viz-lytics.vercel.app
+      - CLIENT_URL=https://github-pro-1-client.vercel.app
+      - SERVER_URL=https://github-pro-1-client.vercel.app
     depends_on:
       db:
         condition: service_healthy

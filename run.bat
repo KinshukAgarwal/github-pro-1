@@ -18,7 +18,7 @@ echo =======================
 echo.
 echo 📱 Frontend:  http://127.0.0.1:3000
 echo 🔧 Backend:   http://127.0.0.1:5000
-echo 🌐 Production: https://git-viz-lytics.vercel.app
+echo 🌐 Production: https://github-pro-1-client.vercel.app/
 echo.
 echo ✅ Environment: All variables loaded
 echo 🔑 GitHub OAuth: Configured
